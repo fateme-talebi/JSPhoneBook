@@ -1,0 +1,131 @@
+* {
+    box-sizing: border-box;
+    outline: none;
+}
+
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #FFF;
+}
+
+h1,
+label,
+button,
+ul li {
+    text-shadow: 1px 1px 1px black;
+}
+
+.content {
+    margin: 15px auto;
+    padding: 10px 40px 40px 40px;
+    background-color: rgba(100, 105, 101, 0.7);
+    border-radius: 5px;
+}
+
+.searchContainer {
+    direction: rtl;
+}
+
+
+/* icons */
+
+.fa-address-book {
+    padding-left: 8px;
+}
+
+.fa-minus-circle {
+    color: rgb(247, 48, 48);
+    cursor: pointer;
+}
+
+.fa-search {
+    position: absolute;
+    color: royalblue;
+    padding: 7px 20px 10px 3px;
+}
+
+#phone-book-container {
+    width: 60%;
+    padding: 45px;
+    margin: 20px auto;
+    background-image: url('./images/5.jpg');
+    background-attachment: fixed;
+    border-radius: 5px;
+}
+
+label {
+    display: block;
+    padding-bottom: 5px;
+    font-size: 1.3em;
+}
+
+input {
+    border-radius: 4px;
+    border: 1px solid #777;
+    width: 100%;
+    height: 30px;
+    margin: 0 auto 20px auto;
+    padding: 10px;
+    text-align: center;
+}
+
+button {
+    background-color: rgb(70, 173, 180);
+    color: #FFF;
+    border: 1px solid #777;
+    display: block;
+    border-radius: 4px;
+    width: 100%;
+    height: 30px;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: rgb(25, 94, 98);
+}
+
+ul li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 3px;
+    width: 25%;
+}
+
+ul li:last-child {
+    width: 5%;
+}
+
+.tilte {
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+#contactsContainer>ul:first-child>hr {
+    border-top: 2px solid white;
+}
+
+.hidden {
+    display: none;
+}
+
+.requiredInput {
+    border: 2px solid rgb(247, 48, 48);
+}
+
+#noResult {
+    font-size: 2.1em;
+    color: darkred;
+    padding: 5px 40px;
+}
+
+@media(max-width: 1170px) {
+    #phone-book-container {
+        width: 100%;
+    }
+}
+
+@media(max-width: 726px) {
+    #phone-book-container {
+        padding: 15px 5px;
+    }
+}
